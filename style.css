@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --transpaten-white: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  color: var(--transpaten-white);
+}
+body {
+  background-color: var(--very-light-gray);
+}
+
+h2 {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 700;
+  font-size: 2em;
+  color: var(--very-light-gray);
+  padding-bottom: 30px;
+}
+
+p {
+  color: var(--transpaten-white);
+  padding-bottom: 60px;
+  flex-wrap: no-wrap;
+}
+
+.container .orange,
+.green,
+.dark-green {
+  /* border: 1px solid red; */
+  width: 250px;
+  height: auto;
+  padding: 20px 30px;
+  box-sizing: border-box;
+}
+
+.orange button {
+  color: var(--bright-orange);
+}
+.green button {
+  color: var(--dark-cyan);
+}
+
+.dark-green button {
+  color: var(--very-dark-cyan);
+}
+
+button {
+  display: inline-block;
+  background-color: var(--very-light-gray);
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  border: 2px solid white;
+  border-radius: 30px;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 20px;
+  width: 150px;
+}
+
+button:hover {
+  background-color: transparent;
+  color: white;
+}
+
+.orange {
+  border-radius: 5% 0 0 5%;
+  background-color: var(--bright-orange);
+}
+.green {
+  background-color: var(--dark-cyan);
+}
+.dark-green {
+  background-color: var(--very-dark-cyan);
+  border-radius: 0 5% 5% 0;
+}
+
+img {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 375px auto;
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    clear: both;
+    height: auto;
+    margin: 20px 20px 20px 20px;
+  }
+
+  .container .orange,
+  .green,
+  .dark-green {
+    border-radius: 5%;
+  }
+}
+@media screen and (max-width: 760px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    clear: both;
+    height: auto;
+    margin: 20px 20px 20px 20px;
+  }
+
+  .container .orange,
+  .green,
+  .dark-green {
+    border-radius: 5%;
+  }
+}
+
+/* .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+} */
